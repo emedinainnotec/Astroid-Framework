@@ -953,12 +953,12 @@ class Document
         $class[] = "site";
         $class[] = "astroid-framework";
 
-        $option = $app->input->get('option', '', 'STRING');
-        $view = $app->input->get('view', '', 'STRING');
-        $layout = $app->input->get('layout', 'default', 'STRING');
-        $task = $app->input->get('task', '', 'STRING');
+        $option = $app->input->get('option', '', 'ALNUM');
+        $view = $app->input->get('view', '', 'ALNUM');
+        $layout = $app->input->get('layout', 'default', 'ALNUM');
+        $task = $app->input->get('task', '', 'ALNUM');
         $header = $params->get('header', TRUE);
-        $headerMode = $params->get('header_mode', 'horizontal', 'STRING');
+        $headerMode = $params->get('header_mode', 'horizontal', 'ALNUM');
         $Itemid = $app->input->get('Itemid', '', 'INT');
 
         if (!empty($option)) {
